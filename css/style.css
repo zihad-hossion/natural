@@ -181,6 +181,7 @@ body {
     text-shadow: .5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+/* row section start here */
 .htertiary {
     font-size: 1.6rem;
     font-weight: 700;
@@ -216,4 +217,45 @@ body {
 .btn-text:active {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     transform: translateY(0);
+}
+
+.composition {
+    position: relative;
+}
+
+.com_photo {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    outline-offset: 2rem;
+    transition: all .2s;
+}
+
+.com_p1 {
+    left: 0;
+    top: -2rem;
+}
+
+.com_p2 {
+    right: 0;
+    top: 2rem;
+}
+
+.com_p3 {
+    left: 20%;
+    top: 10rem;
+}
+
+.com_photo:hover {
+    outline: 1.5rem solid #55c57a;
+    transform: scale(1.05) translateY(-.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, .5);
+    z-index: 20;
+    outline-offset: ;
+}
+
+.composition:hover .com_photo:not(:hover) {
+    transform: scale(.95);
 }
