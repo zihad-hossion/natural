@@ -9,12 +9,14 @@
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     font-size: 1.6rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -22,8 +24,15 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
-.btn:active {
-    transform: translateY(-1);
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+    transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
@@ -115,27 +124,27 @@
 
 
 .center-text {
-    text-align: center;
+    text-align: center !important;
 }
 
 .bottom-margin-sm {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem !important;
 }
 
 .bottom-margin-md {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
 }
 
 .bottom-margin-big {
-    margin-bottom: 8rem;
+    margin-bottom: 8rem !important;
 }
 
 .top-margin-big {
-    margin-top: 8rem;
+    margin-top: 8rem !important;
 }
 
 .top-margin-large {
-    margin-top: 10rem;
+    margin-top: 10rem !important;
 }
 
 .row {
